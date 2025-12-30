@@ -344,6 +344,7 @@ Stockout days are estimated using average daily sales (simple approach)
 2. API Implementation 
 
 ```python
+
 @app.route('/api/companies/<int:company_id>/alerts/low-stock', methods=['GET'])
 def low_stock_alerts(company_id):
     alerts = []
@@ -421,7 +422,8 @@ def low_stock_alerts(company_id):
         "alerts": alerts,
         "total_alerts": len(alerts)
     }, 200
-    ```
+    
+```
 
 3. Edge Cases Considered
 
